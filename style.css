@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+}
+.loading{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    /* display: none; */
+}
+.loading h4{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 23vw;
+    left: 30vw;
+    height: 2vh;
+    width: 40vw;
+}
+.loadline{
+    position: absolute;
+    top: 26vw;
+    left: 20vw;
+    height: 2vh;
+    width: 60vw;
+    animation: lineload 5s linear ease-in-out 1;
+    background-color: green;
+}
+.box{
+    background-color: gray;
+    margin-top: 54px;
+    margin-left: 100px;
+    border: 8px solid black;
+    height: 30vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.howtoplay{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 2.3rem;
+    display: none;
+}
+.howtoplay button{
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.content{
+    margin-top: 90px;
+    padding: 30px;
+    font-size: xx-large;
+}
+.frontpage{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 239, 0.447);
+}
+.btn-1{
+    position: absolute;
+    left: 37vw;
+    top: 20vw;
+    width: 25%;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: rgb(60, 57, 55);
+    color: white;
+}
+.btn-2{
+    position: absolute;
+    left: 37vw;
+    top: 24vw;
+    width: 25%;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: rgb(60, 57, 55);
+    color: white;
+}
+.btn-3{
+    position: absolute;
+    left: 37vw;
+    top: 28vw;
+    width: 25%;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: rgb(60, 57, 55);
+    color: white;
+}
+.aside{
+    position: absolute;
+    right: 0;
+    bottom: 74px;
+}
+.aside img{
+    margin-right: 42px;
+}
+.aside h3{
+    color: rgb(249, 248, 248);
+    text-align: center;
+    border: 2px solid black;
+}
+.ches img{
+    background-size: cover;
+    width: 280px;
+    margin-left: 42px;
+}
+.ches{
+    position: absolute;
+    left: 0;
+    bottom: 74px;
+}
+.ches h3{
+    color: rgb(249, 248, 248);
+    text-align: center;
+    border: 2px solid black;
+}
+.main-text{
+    text-align: center;
+    top: 0;
+    font-size: 4rem;
+}
+#scorecont{
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    border: 2px solid black;
+}
+.gamecontainer{
+   display: none; 
+   background-image: url(1700.jpg);
+   background-repeat: no-repeat;
+   background-size: 100vw 100vh;
+   width: 100%;
+   height: 100vh;
+}
+.runner{
+    background-image: url(sonic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 127px;
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+.chesnut{
+    background-image: url(pokemon.png);
+    background-size: cover;
+    width: 170px;
+    height: 173px;
+    position: absolute;
+    bottom: 0;
+    left: 45vw;
+    box-shadow: 5px greenyellow;
+}
+.obstacle{
+    animation: obstacle 5s linear infinite;
+
+}
+.animaterunner{
+    animation: runner 0.6s linear;
+}
+.gover{
+    visibility: hidden;
+    text-align: center;
+    position: relative;
+    top: 38px;
+    font-size: 3rem;
+}
+.restart{
+    padding: 10px;
+}
+@keyframes runner{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 310px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes obstacle{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+@keyframes lineload{
+    from{
+        width: 1vw;
+        background-color: orange;
+    }
+    to{
+        width: 60vw;
+        background-color: blue;
+    }
+}
